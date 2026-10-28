@@ -96,22 +96,6 @@ cd android && ./gradlew assembleRelease
  
 El APK queda en `android/app/build/outputs/apk/release/`.
  
-## Datos de prueba
- 
-El técnico de prueba y su clave están en `src/data/usuarios.ts`.
- 
-Casos de prueba previstos para cargar en MockAPI tras migrar el recurso:
- 
-| Código | Qué permite probar |
-|---|---|
-| `MED-100001` | Consumo normal |
-| `MED-100002` | Consumo anómalo |
-| `MED-100003` | Límite exacto del umbral (30 no es anómalo, 31 sí con promedio 10) |
-| `MED-100004` | Estado de oficina distinto de activo |
-| `MED-100005` | Lectura menor que la anterior |
-| `MED-100020` | Medidor no consultado antes, para registrar sin conexión y sin caché |
- 
-`MED-100019` no existe y sirve para probar «medidor no encontrado».
  
 ## Estructura
  
